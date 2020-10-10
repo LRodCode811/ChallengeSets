@@ -70,8 +70,8 @@ namespace ChallengeSets
 
         public char GetFirstLetterOfString(string val)
         {
-            var First = val[0];
-            return First;
+            var first = val[0];
+            return first;
         }
 
         public char GetLastLetterOfString(string val)
@@ -86,14 +86,12 @@ namespace ChallengeSets
             {
                 return 0;
             }
-            var answer = dividend / divisor;
-            return answer;
+            return dividend / divisor;
         }
 
         public int LastMinusFirst(int[] nums)
         {
-            var answer = nums[nums.Length - 1] - nums[0];
-            return answer;
+            return nums[nums.Length - 1] - nums[0];
         }
         public int[] GetOddsBelow100()
         {
