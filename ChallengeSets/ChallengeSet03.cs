@@ -90,11 +90,12 @@ namespace ChallengeSets
         }
 
         public int LastMinusFirst(int[] nums)
-        {
+        { 
             return nums[nums.Length - 1] - nums[0];
         }
         public int[] GetOddsBelow100()
         {
+
             List<int> numbers = new List<int>();
             for (int i = 0; i <= 100; i++)
             {
@@ -103,12 +104,14 @@ namespace ChallengeSets
                     numbers.Add(i);
                 }
             }
-            int[] numbers1 = new int[numbers.Count];
-            for (int j = 0; j < numbers.Count; j++)
-            {
-                numbers1[j] = numbers[j];
-            }
-            return numbers1;
+            return numbers.ToArray();
+
+            //int[] numbers1 = new int[numbers.Count];
+            //for (int j = 0; j < numbers.Count; j++)
+            //{
+            //    numbers1[j] = numbers[j];
+            //}
+            //return numbers1;
         }
 
         public void ChangeAllElementsToUppercase(string[] words)
